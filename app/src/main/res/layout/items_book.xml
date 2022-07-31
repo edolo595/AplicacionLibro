@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/layaut_border"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEXTO TILULO"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:textColor="@color/secondaryTextColor"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toTopOf="@id/imgPortada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgPortada"
+            android:layout_width="180dp"
+            android:layout_height="260dp"
+            android:src="@drawable/p1"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toStartOf="@id/txtAutor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/labelAutor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Autor:"
+            android:textColor="@color/secondaryTextColor"
+            app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgPortada"
+            app:layout_constraintBottom_toTopOf="@id/txtAutor"/>
+
+        <TextView
+            android:id="@+id/txtAutor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Autorssssssssssssssssssssssssssssssssssssssss"
+            android:textStyle="italic"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/labelGenero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgPortada"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintVertical_bias=".6"
+            />
+
+        <TextView
+            android:id="@+id/labelGenero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Genero:"
+            android:textColor="@color/secondaryTextColor"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintVertical_bias=".45"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgPortada"/>
+        <TextView
+            android:id="@+id/txtGenero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp"
+            android:text="Genero"
+            android:textStyle="italic"
+            app:layout_constraintVertical_bias=".04"
+            android:textColor="@color/secondaryTextColor"
+            android:textAlignment="textStart"
+            app:layout_constraintTop_toBottomOf="@id/labelGenero"
+            app:layout_constraintStart_toEndOf="@id/imgPortada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgPortada"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio: $"
+                android:textColor="@color/secondaryTextColor"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textEnd"
+                android:textStyle="bold|italic"
+                android:textColor="@color/secondaryTextColor"
+                android:text="252.15"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgPortada"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MX"
+                android:textColor="@color/secondaryTextColor"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bt_color"
+        android:title="@string/cambiar_color"
+        android:enabled="true"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/bt_texto"
+        android:title="@string/cambiar_texto"
+        android:enabled="true"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/bt_desabilitar"
+        android:title="@string/desabilitar"
+        android:enabled="true"
+        app:showAsAction="collapseActionView"/>
+
+</menu>
